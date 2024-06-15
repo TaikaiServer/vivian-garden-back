@@ -65,7 +65,8 @@ routes.post('/book', async (req, res) => {
 
         const mailOptions = {
             from: 'vudangdaiduong@gmail.com',
-            to: 'viviangardenhomestay@gmail.com',
+            // to: 'viviangardenhomestay@gmail.com',
+            to: 'duongtaikai@gmail.com',
             subject: 'Yêu Cầu Đặt Phòng Mới',
             text: `Họ và Tên: ${name}\nSố Điện Thoại: ${number}\nEmail: ${email}\nSố lượng người dự kiến: ${people}\nNgày mong muốn Check In: ${indate}\nNgày mong muốn Check Out: ${outdate}\nLựa Chọn Book Phòng: ${option}\nSố Lượng Phòng Lẻ: ${option === 'Phòng Lẻ' ? singleRooms : 'N/A'}\nGhi Chú: ${note}\n`
         };
