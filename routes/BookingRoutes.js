@@ -42,6 +42,11 @@ const adjustRoomAvailability = async (booking) => {
     }
 };
 
+routes.post('/', (req, res) => {
+    res.send("<h1>hello</h1>")
+})
+
+
 // Endpoint to book a room
 routes.post('/book', async (req, res) => {
     const { name, number, email, people, indate, outdate, option, note, singleRooms } = req.body;

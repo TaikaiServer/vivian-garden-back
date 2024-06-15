@@ -53,6 +53,9 @@ app.use("/api", availabilityRoute)
 app.use("/api", bookingRoute)
 app.use("/api", crudRoute)
 
+app.route("/").get((req, res) => {
+    res.send("<h1>hello</h1>")
+})
 
 
 mongoose.connection.once('open', async () => {
