@@ -5,11 +5,7 @@ const cors = require('cors');
 const app = express();
 
 // cors config
-app.use(cors({
-    origin: 'http://localhost:3000', // Allow your frontend URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-  }));
+app.use(cors);
 
 app.use(bodyParser.json());
 
