@@ -67,6 +67,8 @@ routes.put('/confirmedBookings/:id', async (req, res) => {
 });
 
 
+
+
 // Delete a confirmed booking
 routes.delete('/confirmedBookings/:id', async (req, res) => {
     try {

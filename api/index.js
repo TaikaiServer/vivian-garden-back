@@ -3,7 +3,14 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
-app.use(cors());
+
+// cors config
+app.use(cors({
+    origin: 'http://localhost:3000', // Allow your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
+
 app.use(bodyParser.json());
 
 // importing schemas
