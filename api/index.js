@@ -3,10 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
-
-// cors config
-app.use(cors);
-
+app.use(cors());
 app.use(bodyParser.json());
 
 // importing schemas
