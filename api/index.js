@@ -7,12 +7,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // cors config
-app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: 'GET,POST,PUT,DELETE,OPTIONS',
-    allowedHeaders: 'Content-Type,Authorization',
-    credentials: true
-}));
+
 
 // importing schemas
 const RoomAvailability = require('./models/RoomAvailability');
