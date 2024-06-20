@@ -6,6 +6,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// cors config
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
+
 // importing schemas
 const RoomAvailability = require('./models/RoomAvailability');
 
